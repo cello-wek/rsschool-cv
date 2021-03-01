@@ -3,7 +3,7 @@
 ### Contact Information:
 
 * 30th, august,1994
-* 21 Bielinskogo st.,233, Minsk, 220113, Belarus.
+* 21 Bielinskogo st,233, Minsk, 220113, Belarus.
 * falya500@gmail.com 
 * +375(33)6968730
 
@@ -61,6 +61,7 @@ Belarussian state academy of music, Orchestra Department, 2014-2019
 
 ### Languages:
 
+* English - A2
 * Russian – Native
 * Belorussian – Native
 * Polish – A2
