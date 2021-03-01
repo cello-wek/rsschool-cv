@@ -6,6 +6,7 @@
 * 21 Bielinskogo st,233, Minsk, 220113, Belarus.
 * falya500@gmail.com 
 * +375(33)6968730
+* https://www.facebook.com/profile.php?id=100003402189899
 
 ### Summary:
 
