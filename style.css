@@ -1,21 +1,21 @@
-html{
+html {
 	box-sizing: border-box;
 }
 
-body{
-	color:#3c0000;
-	background-color:#fef9f3;
-	font-family: 'Fira Sans', sans-serif;
+body {
+	color: #3c0000;
+	background-color: #fef9f3;
+	font-family: "Fira Sans", sans-serif;
 	font-weight: 400;
 	margin: 0;
 }
-a{
-	color:#3c0000;
+a {
+	color: #3c0000;
 }
-h3{
+h3 {
 	font-size: 40px;
 	line-height: 42px;
-	font-family:'Roboto Condensed', sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 700;
 }
 .container {
@@ -37,13 +37,13 @@ h3{
 	border: 1px solid #3c0000;
 }
 .header__name {
-	font-family:'Roboto Condensed', sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 70px;
 }
 .contacts__inner {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 200px;
@@ -80,7 +80,7 @@ h3{
 .skills__item {
 	margin-bottom: 5px;
 }
-.code__inner{
+.code__inner {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
@@ -124,14 +124,16 @@ h3{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 150px;
-}
-.footer__link {
+	max-height: 150px;
 }
 .footer__logo {
 	width: 50%;
 	height: 50%;
 }
-.footer_youtube {
-	align-self: center;
+.footer__link {
+	text-align: center;
+}
+
+.footer__year {
+		padding-left: 90px;
 }
