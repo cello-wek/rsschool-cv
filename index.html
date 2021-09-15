@@ -9,6 +9,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,23 +22,52 @@
 				<img class="header__avatar" src="images/avatar.jpg" alt="avatar">
 				<h1 class="header__name">Olga Falkovskaya</h1>
 			</div>
+			<div class="header-navigation">
+				<nav>
+					<ul class="nav-menu">
+						<li class="nav-item"><a class="nav-link" href="#contacts">
+								<h2>Contacts</h2>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#summary">
+								<h2>Summary</h2>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#skills">
+								<h2>Skills</h2>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#code">
+								<h2>Code example</h2>
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">
+								<h2>Projects</h2>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#education">
+								<h2>Education</h2>
+							</a></li>
+						<li class="nav-item"><a class="nav-link" href="#languages">
+								<h2>Languages</h2>
+							</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
+
 	<main>
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<div class="contacts__inner">
 					<h3 class="contacts__title">Contact Information</h3>
 					<ul class="contacts__items">
 						<li class="contacts__item">Minsk, Belarus.</li>
 						<li class="contacts__item">falya500@gmail.com </li>
+						<li class="contacts__item">+ 375 (33) 696-87-30 </li>
 						<li class="contacts__item"><a class="contacts__fb"
 								href="https://www.facebook.com/profile.php?id=100003402189899">Facebook</a></li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		<section class="summary">
+		<section class="summary" id="summary">
 			<div class="container">
 				<div class="summary__inner">
 					<h3 class="summary__title">Summary</h3>
@@ -46,7 +78,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="container">
 				<div class="skills__inner">
 					<h3 class="skills__title">Skills</h3>
@@ -64,53 +96,49 @@
 				</div>
 			</div>
 		</section>
-		<section class="code">
+		<section class="code" id="code">
 			<div class="container">
 				<div class="code__inner">
 					<h3 class="Code__title">Code Example</h3>
 					<div class="code__text">
-						<pre><code>
-				&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;ru&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
-  &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;header class=&quot;header&quot;&gt;
-&lt;div class=&quot;header__inner&quot;&gt;
-&lt;a class=&quot;logo&quot; href=&quot;#&quot;&gt;
-&lt;img class=&quot;logo__link&quot;src=&quot;images/logo.svg&quot; alt=&quot;logo&quot;&gt;
-&lt;/a&gt;
-&lt;nav class=&quot;menu&quot;&gt;
-&lt;ul class=&quot;menu__list&quot;&gt;
-&lt;li class=&quot;menu__item&quot;&gt;&lt;a class=&quot;menu__list-link&quot; href=&quot;#&quot;&gt;О НАС&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;menu__item&quot;&gt;&lt;a class=&quot;menu__list-link&quot; href=&quot;#&quot; &gt;УСЛОВИЯ&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;menu__item&quot;&gt;&lt;a class=&quot;menu__list-link&quot; href=&quot;#&quot; &gt;КОНТАКТЫ&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;/nav&gt;
-&lt;/div&gt;
- &lt;/header&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-			</code></pre>
+						<pre><code>function towelSort (matrix) {
+	if(!matrix){
+		return [];
+	}
+	let resArr = [];
+	for(let i = 0; i&lt; matrix.length; i ++){
+		for(let j = 0; j &lt; matrix[i].length; j ++){
+			let columnInd = i % 2 === 0 
+			? j
+			: (matrix[i].length - j - 1);
+			resArr.push(matrix[i][columnInd]);
+		}
+	}
+	return resArr;
+}</code></pre>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="education">
+		<section class="projects" id = "projects">
+			<div class="container">
+				<div class="projects__inner">
+					<h3 class="projects__title">Projects</h3>
+				</div>
+			</div>
+		</section>
+		<section class="education" id="education">
 			<div class="container">
 				<div class="education__inner">
 					<h3 class="education__title">Education</h3>
 					<ul class="education__list">
-						<li class="education__item">Belarussian state academy of music, Orchestra Department, 2014-2019</li>
+						<li class="education__item">Belarussian state academy of music, 2014-2019</li>
 						<li class="education__item">The Rolling Scopes School, 2021</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		<section class="lang">
+		<section class="lang" id="languages">
 			<div class="container">
 				<div class="lang__inner">
 					<h3 class="lang__title">Languages</h3>
@@ -138,4 +166,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

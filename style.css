@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -8,24 +9,47 @@ body {
 	font-family: "Fira Sans", sans-serif;
 	font-weight: 400;
 	margin: 0;
+	transition: all 0.3s
 }
+
+ul {
+	list-style: none;
+}
+
 a {
 	color: #3c0000;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	border-bottom: none;
+	text-decoration: none;
 }
+
 h3 {
 	font-size: 40px;
 	line-height: 42px;
 	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 700;
 }
+h2{
+	font-size: 28px;
+	line-height: 38px;
+	font-family:  "Roboto Condensed", sans-serif;
+	font-weight: 700;
+}
+
 .container {
 	max-width: 1000px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
 .header {
 	background-color: #fcebd7;
 }
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
@@ -33,15 +57,26 @@ h3 {
 	height: 300px;
 	margin-bottom: 30px;
 }
+
 .header__avatar {
 	border: 1px solid #3c0000;
 }
+
 .header__name {
 	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 70px;
 }
+
+.nav-menu{
+height: 100px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 .contacts__inner {
 	display: flex;
 	justify-content: space-between;
