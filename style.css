@@ -91,7 +91,7 @@ h2{
 
 .menu__btn{
 	display: none;
-	z-index: 10;
+	z-index: 9;
 }
 .nav-menu{
 max-width: 100%;
@@ -125,7 +125,7 @@ align-items: center;
 }
 
 .summary__text {
-	width: 600px;
+	max-width: 600px;
 	padding: 30px 0;
 }
 
@@ -163,8 +163,8 @@ align-items: center;
 
 
 .projects__item{
-width: 340px;
-height: 300px;
+max-width: 340px;
+max-height: 300px;
 text-align: center;
 }
 
@@ -202,11 +202,6 @@ margin-bottom: 20px;
 	padding: 30px 0;
 }
 
-
-.lang__list {
-	list-style: none;
-	margin-left: -35px;
-}
 .lang__item {
 	margin-bottom: 5px;
 }
@@ -215,22 +210,26 @@ margin-bottom: 20px;
 }
 .footer__inner {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	max-height: 150px;
 }
+
 .footer__logo {
-	width: 50%;
-	height: 50%;
+	width: 100px;
+	height: 50px;
+} 
+
+.footer_github{
+	width: 50px;
+	height: 50px;
 }
 .footer__link {
+	display: block;
+}
+.footer__year{
 	text-align: center;
 }
-
-.footer__year {
-		padding-left: 90px;
-}
-
 
 @media (max-width: 1140px) {
 .header__inner{
@@ -285,9 +284,16 @@ margin-bottom: 20px;
 		display: flex;
 	}
 	.contacts__items{
-		width: 350px;
+		max-width: 350px;
 	}
 }
+
+@media (max-width: 840px){
+	.summary__text{
+		max-width: 350px;
+	}
+}
+
 
 @media (max-width: 768px){
 	.header__inner{
@@ -305,32 +311,48 @@ margin-bottom: 20px;
 		font-size: 24px;
 		line-height: 28px;
 	}
-	.contacts__inner{
+	.inner{
 		display: flex;
 	}
 	.contacts__items{
-		width: 350px;
+		max-width: 350px;
 	}
 	.contacts__title{
-		width: 350px;
+		max-width: 350px;
 	}
 	h3{
 		font-size: 24px;
 	}
+	 .footer__inner{
+		display: flex;
+		justify-content: center;
+	}
+	.footer__logo {
+		width: 20%;
+		height: 20%;
+	}
+	.footer_github{
+		width: 100%;
+		height: 100%;
+	}
+
 }
+@media (max-width: 650px){
+	.code__text{
+		max-width: 300px;
+	}
+}
+
 @media (max-width: 520px){
-	.contacts__inner{
+	.inner{
 	display: block;
 	max-width: 300px;
 	margin: 0 auto;
 	text-align: center;
 	border-bottom: none;
 	}
-	.contacts__items{
-
+	.lang__list{
+		max-width: 300px;
 	}
-	.contacts__title{
-
-	}
-
 }
+
